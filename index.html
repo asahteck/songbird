@@ -1,17 +1,78 @@
 <!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <html>
 <head>
-    <title>some music</title>
-    <link rel="stylesheet" href="includes/main.css">
+    <title>[insert title here]</title>
+    <link rel="stylesheet" href="main.css">
     
 </head>
 <body>
-	<div class="content">
-		<a href="https://open.spotify.com/playlist/6Cg8F6JPEO4zAww755wnQs?si=GI7Iza-JSdOZkWuLzXsd4A">
-         <img alt="playlist spotify code" src="/images/playlist.jpeg"
+  <h1>[insert header here]</h1>
+  <h2> how to use</h2>
+  <h3>scan spotify codes or click for link, mouse over for text, play audio commentary as desired.</h3>
+  <h3>(best viewed on desktop)</h3>
+  <div class="audio">
+      <audio controls>
+        <source src="audio/*.mp3" type="audio/mpeg">
+        <!-- Create an audio folder in the directory this is hosted in, replace *.mp3 with filename. -->
+      </audio>
+    </div>
+  <h2> full playlist</h2>
+	<div class="playlist-link">
+    <div class="dropdown">
+      <span>
+		<a href="https://open.spotify.com/playlist/5KWpNI7o0mSGn2N9PP15hk?si=B5s_dOmDROafG8BansxzDw">
+            <!--Replace with relevant playlist link. -->
+         <img alt="playlist spotify code" src="imgs/playlist.jpg"
          width="640" height="160">
-      </a>
+            <!--Replace with relevant playlist image stored in imgs folder in directory. -->
+   </a>
+      </span>
+      <div class="dropdown-content">
+  <p>this is the playlist commentary.</p>
+  <!--Insert your relevant playlist commentary above. -->
+      </div>
+    </div>
+    <div class="audio">
+      <audio controls>
+        <source src="audio/intro.mp3" type="audio/mpeg">
+        <!--Replace with relevant playlist intro commentary audio. -->
+      </audio>
+    </div>
 	</div>
+  <h2> song list</h2>
+  <div class="song-list">
+    <!-- template for each song-->
+      <div class="dropdown">
+        <span>
+          <a href="https://open.spotify.com/track/1tD8J13a74q8fBqXwAP50j?si=tf8hBR2nQi6Zw4YyzgmqTg">
+      <img alt="song 1 spotify code" src="imgs/song1.jpg">
+    </a>
+    </span>
+  <div class="dropdown-content">
+  <p> Inster commentary here. </p>
+      </div>
+  </div>
+   <div class="audio">
+      <audio controls>
+        <source src="audio/song1.mp3" type="audio/mpeg">
+        <!--Replace with relevant commentary audio. -->
+      </audio>
+    </div>
+    
+    <!--Add and copy modules as desired. -->
+
+</div>
+
+  <div class="madeby">
+    <script>
+			function meme() {
+    			alert("click on buttons, do ya? here is hug.");
+			}
+		</script>
+        <button onclick="meme()">made with <3 by shayna</button>
+  </div>
+  
 </body>
 
 </html>
